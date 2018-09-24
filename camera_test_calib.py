@@ -13,6 +13,8 @@ checkorBoardSize=(9,6)
 duration = 1000  # millisecond
 freq = 1000
 CROP_WIDTH = 960
+
+#linux users please comment this out and give a defined dump_loc
 desktop = os.path.join(os.path.join(os.environ['USERPROFILE']), 'Desktop')
 dump_loc=(desktop+"\objp.txt")
 

@@ -7,6 +7,7 @@ This script uses live feed to detect corners.
   <li>Change calue of "dump_loc" to change the location where you save your calibration data</li>
   <li>To change the number of images used to complete calibration change "calibrationImagesNo"</li>
   <li>It is recommended that you use more than 50 images for calibration</li>
- `<li>Linux users need to make a small change in the beggining of the code please chk the comments</ul> 
+ `<li>Linux users need to make a small change in the beggining of the code please chk the comments</li>
+</ul> 
 
 Please use idle to run this code it might not run using direct cmd promt

@@ -13,12 +13,9 @@ checkorBoardSize=(9,6)
 duration = 1000  # millisecond
 freq = 1000
 CROP_WIDTH = 960
-
-
-
-
 desktop = os.path.join(os.path.join(os.environ['USERPROFILE']), 'Desktop')
 dump_loc=(desktop+"\objp.txt")
+
 #camera stuff
 cam = cv2.  VideoCapture(0)
 #cam.set(cv2.CAP_PROP_FPS, 120)
@@ -34,8 +31,8 @@ print(height)
 criteria = (cv2.TERM_CRITERIA_EPS + cv2.TERM_CRITERIA_MAX_ITER, 30, 0.001)
 
 # prepare object points, like (0,0,0), (1,0,0), (2,0,0) ....,(6,5,0)
-objp = np.zeros((6*9,3), np.float32)
-objp[:,:2] = np.mgrid[0:9,0:6].T.reshape(-1,2)
+objp = np.zeros((checkorBoardSize[1]*checkorBoardSize[0],3), np.float32)
+objp[:,:2] = np.mgrid[0:checkorBoardSize[0],0:checkorBoardSize[1]].T.reshape(-1,2)
 
 # Arrays to store object points and image points from all the images.
 objpoints = [] # 3d point in real world space

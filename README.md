@@ -25,7 +25,7 @@ Please use idle to run this code it might not run using direct cmd prompt
   <li>The parameters will be saved using pickle on the desktop or the place where you selected
  </ul>
  
- Requirments:
+ ### Requirments:
 <ul>
   <li>Python-OpenCV(I tested it on CV2 version 3.4.x i havent tested it with cv2 version 4.0.x)
   <li>Numpy

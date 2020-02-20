@@ -24,5 +24,18 @@ Please use idle to run this code it might not run using direct cmd prompt
   <li>When the calibration is done a new window will appear with the corrected frame
   <li>The parameters will be saved using pickle on the desktop or the place where you selected
  </ul>
+ 
+ Requirments:
+<ul>
+  <li>Python-OpenCV(I tested it on CV2 version 3.4.x i havent tested it with cv2 version 4.0.x)
+  <li>Numpy
+  <li>Pickle
+</ul>
 
+Note: pip installations should work here no need to compile from source
+Note:If you arent getting good results then play with the flags in:
+
+[ln 135] ret, mtx, dist, rvecs, tvecs = cv2.calibrateCamera(objpoints, imgpoints, gray.shape[::-1],None,None,flags=cv2.CALIB_USE_EXTRINSIC_GUESS+cv2.CALIB_FIX_K3)
+
+depending upon the type of error you may need to use a different combination
 

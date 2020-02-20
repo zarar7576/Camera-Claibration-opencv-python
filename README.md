@@ -12,3 +12,17 @@ This script uses live feed to detect corners.
 </ul> 
 
 Please use idle to run this code it might not run using direct cmd prompt
+
+## How to use
+<ul>
+  <li>Run script select correct option
+  <li>The camera should start and display the image in a window
+  <li>Stand infront of the camera with checkerboard
+  <li>If the board is detected frame will freeze for a few seconds and will play a sound
+  <li>Do this on all sides of the frame
+  <li>Repeat the no of times that you selected
+  <li>When the calibration is done a new window will appear with the corrected frame
+  <li>The parameters will be saved using pickle on the desktop or the place where you selected
+ </ul>
+
+

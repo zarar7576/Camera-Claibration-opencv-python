@@ -7,7 +7,7 @@ This script uses live feed to detect corners.
   <li>Change value of "dump_loc" to change the location where you save your calibration data</li>
   <li>To change the number of images used to complete calibration change "calibrationImagesNo"</li>
   <li>It is recommended that you use more than 50 images for calibration</li>
-  <li>Linux users need to make a small change in the beggining of the code please chk the comments</li>
+  <li>Linux users need to make a small change in the beggining of the code please check the comments</li>
  
 </ul> 
 
@@ -33,9 +33,10 @@ Please use idle to run this code it might not run using direct cmd prompt
 </ul>
 
 Note: pip installations should work here no need to compile from source
-Note:If you arent getting good results then play with the flags in:
+
+Note:If you aren't getting good results then play with the flags in:
 
 [ln 135] ret, mtx, dist, rvecs, tvecs = cv2.calibrateCamera(objpoints, imgpoints, gray.shape[::-1],None,None,flags=cv2.CALIB_USE_EXTRINSIC_GUESS+cv2.CALIB_FIX_K3)
 
-depending upon the type of error you may need to use a different combination
+depending upon the type of error you may need to use a different combination of flags
 
